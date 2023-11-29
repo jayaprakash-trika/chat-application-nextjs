@@ -24,7 +24,7 @@ export default function ChatBox() {
         sendChatMessage(messageText);
     }
     const handleKeyDown = (event) => {
-        if (e.charCode !== 13 || messageTextIsEmpty) {
+        if (event.charCode !== 13 || messageTextIsEmpty) {
             return;
         }
         sendChatMessage(messageText);
